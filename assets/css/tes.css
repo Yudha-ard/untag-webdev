@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FABC02, #FABC02 60%, #fff 60%, #fff 100%);
+  overflow: hidden;
+}
+
+.logo img{
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+div.message p {
+  margin-top: 50px;
+  text-align: center;
+  float: left;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.box h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 37.5px;
+  color: #000;
+  text-align: center;
+}
+
+.box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label {
+  top: -22.5px;
+  left: 0;
+  color: #000;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.box .inputBox span.input {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  display: block;
+  background: #555;
+  width: 100%;
+  height: 2px;
+}
+
+.box .inputBox span.input:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.box .inputBox input[type="text"]:focus~span.input:before,
+.box .inputBox input[type="text"]:valid~span.input:before,
+.box .inputBox input[type="password"]:focus~span.input:before,
+.box .inputBox input[type="password"]:valid~span.input:before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.25s ease-in-out;
+}
+
+.box h5 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.box input[type="button"] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 10px 25px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+  border: 0.1px solid #000;
+}
+
+.box input[type="button"]:hover {
+  font-weight: bolder;
+  color: #000;
+  background: #fff;
+  border: 0.1px solid #FABC02 ;
+  transition: 0.3s;
+}
+
+/* Contact Style Start */
+ul {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 5px;
+}
+
+ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(2px);
+  transform: scale(0.8);
+}
+
+ul li:hover:before {
+  transition-delay: 0.2s;
+  opacity: 0.2;
+  transform: scale(1);
+}
+
+ul li a {
+  width: 50px;
+  height: 50px;
+  display: block;
+  transition: 0.5s;
+  background: #ccc;
+}
+
+ul li:hover a {
+  transform: translateY(-15px);
+}
+
+ul li a span {
+  width: 100%;
+  height: 100%;
+}
+
+ul li a span:before {
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 25px;
+  color: #000;
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+ul li:hover a span:before {
+  transform: rotateX(90deg) translateY(-50%);
+}
+
+ul li a span:after {
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  font-size: 25px;
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transform: rotateX(90deg) translateY(50%);
+}
+
+ul li:hover a span:after {
+  transform: rotateX(0deg) translateY(0);
+}
+
+ul li:nth-child(1) a span:before,
+ul li:nth-child(1) a span:after {
+  content: "\f09a";
+}
+
+ul li:nth-child(2) a span:before,
+ul li:nth-child(2) a span:after {
+  content: "\f16d";
+}
+
+ul li:nth-child(3) a span:before,
+ul li:nth-child(3) a span:after {
+  content: "\f099";
+}
+
+ul li:nth-child(4) a span:before,
+ul li:nth-child(4) a span:after {
+  content: "\f232";
+}
+
+ul li:nth-child(5) a span:before,
+ul li:nth-child(5) a span:after {
+  content: "\f0e0";
+}
+
+ul li:nth-child(1) a span:after {
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a span:after {
+  background: #e4405f;
+}
+
+ul li:nth-child(3) a span:after {
+  background: #55acce;
+}
+
+ul li:nth-child(4) a span:after {
+  background: #62ff00;
+}
+
+ul li:nth-child(5) a span:after {
+  background: #ff0000;
+}
+
+/* End of Contact Style */
+@media screen and (max-width: 982px) {
+
+
+
+  div.message p {
+    margin-top: 30px;
+  }
+
+  .box {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -47.5%);
+  }
+}

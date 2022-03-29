@@ -1966,7 +1966,7 @@ body {
 }
 
 #content .link:hover {
-  color: #cfcf00;
+  color: #ee5253;
 }
 
 #content .article {
@@ -1987,6 +1987,15 @@ body {
   margin-top: 6px;
   margin-left: 10px;
 }
+
+main {
+  margin-top: 80px;
+}
+.topnav .navbar-nav .nav-item .nav-link {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 600 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
 
 @keyframes bottomToTop {

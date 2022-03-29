@@ -250,7 +250,7 @@
 					<hr class="accent-2 mt-2 d-inline-block mx-auto" style="width: 20%;border-bottom:solid 2px #ee5253;">
 				</div>
 				<div class="col-md-4 d-none d-md-flex align-self-end justify-content-end">
-					<a href="event.html" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
+					<a href="news.html" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
 				</div>
 			</div>
 			<div class="row">
@@ -341,7 +341,7 @@
 			
 			</div>
 			<div class="row justify-content-center d-flex mt-4 d-md-none">
-				<a href="#" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
+				<a href="news.html" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
 			</div>
 		</div>
 
@@ -359,7 +359,7 @@
 					<hr class="accent-2 mt-2 d-inline-block mx-auto" style="width: 20%;border-bottom:solid 2px #ee5253;">
 				</div>
 				<div class="col-md-4 d-none d-md-flex align-self-end justify-content-end">
-					<a href="event.html" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
+					<a href="pages/events/events.html" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
 				</div>
 			</div>
 			<div class="row">
@@ -455,26 +455,6 @@ Lintas Surabaya Siang RRI 99.2 FM: Perempuan dalam Persimpangan Keputusan Cerai
 				<a href="#" class="btn backgroundOrange btn-pill px-4 mb-2">Lebih Banyak</a>
 			</div>
 		</div>
-
-		<!-- modal -->
-		<div class="modal fade" id="publishLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-			  <div class="modal-content">
-				<div class="modal-header">
-				  <h5 class="modal-title" id="exampleModalLabel">Publish</h5>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				  </button>
-				</div>
-				<div class="modal-body" style="justify-items: center;display: grid;">
-					<img src="assets/icon/Big Mark.svg" width="100">
-				  <h4 class="text-center nunitoSemiBold mt-3">Untuk Publish Wisata, Kuliner atau Event Anda Harus Masuk Terlebih Dahulu</h4>
-				  <a href="Login.html" class="btn btn-pillNonAnimation w-100 px-4 my-3 text-white">Masuk</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		<!-- end modal -->
 
 	</section>
 
@@ -602,43 +582,23 @@ Lintas Surabaya Siang RRI 99.2 FM: Perempuan dalam Persimpangan Keputusan Cerai
 	<script src="assets/js/script.js"></script>
 	<!-- End of Including JavaScript File -->
 	<script>
-		$(document).ready(function() {
-			let aman = localStorage.getItem('authLogin');
-			if(aman){
-				$('.nonAuth').addClass('d-none');
-				$('.auth').removeClass('d-none');
-			}else{
-				$('.nonAuth').removeClass('d-none');
-				$('.auth').addClass('d-none');
-			}
 
-			$('.logout').click(function(){
-				localStorage.removeItem('authLogin');
-				window.location.href = 'Login.html';
-			})
 
-$('.animationImg').tilt({
-    maxTilt:6,
-});
-$('.animationImg2').tilt({
-  maxTilt:6,
-});
+	
+		$(window).on('scroll', function() {
+		let scrollTop = $(this).scrollTop();
 
-});
-$(window).on('scroll', function() {
-  let scrollTop = $(this).scrollTop();
+		if(scrollTop > $('#hint .desc').offset().top - 300){
+			$('#hint .desc h2').addClass('bottomToTop');
+			$('#hint .desc h4').addClass('bottomToTop');
+			$('#hint .desc a').addClass('bottomToTop');
+			$('#hint .desc img').addClass('bottomToTop');
+		}
 
-  if(scrollTop > $('#hint .desc').offset().top - 300){
-    $('#hint .desc h2').addClass('bottomToTop');
-    $('#hint .desc h4').addClass('bottomToTop');
-    $('#hint .desc a').addClass('bottomToTop');
-    $('#hint .desc img').addClass('bottomToTop');
-}
-
-if(scrollTop > $('#hint .animationImg2').offset().top - 300){
-  $('#hint .animationImg2 img').addClass('bottomToTop');
-}
-})
+		if(scrollTop > $('#hint .animationImg2').offset().top - 300){
+		$('#hint .animationImg2 img').addClass('bottomToTop');
+		}
+		})
 	</script>
 
 </body>

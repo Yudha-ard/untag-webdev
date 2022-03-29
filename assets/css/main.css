@@ -18,7 +18,7 @@ body {
 }
 
 hr:not([size]) {
- height: 3px;
+  height: 3px;
 }
 
 .hr1 {
@@ -30,7 +30,7 @@ hr:not([size]) {
 .hr2 {
   background: #e00120;
   width: 80px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 #header p {
@@ -78,13 +78,13 @@ hr:not([size]) {
   color: #5a5a5a;
   border: none;
   -webkit-box-shadow: 0px 0px 2px #818181;
-          box-shadow: 0px 0px 2px #818181;
+  box-shadow: 0px 0px 2px #818181;
 }
 
 .card-news:hover {
   color: #3f3f3f;
   -webkit-box-shadow: 2px 2px 10px #a3a3a3;
-          box-shadow: 2px 2px 10px #a3a3a3;
+  box-shadow: 2px 2px 10px #a3a3a3;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -101,7 +101,7 @@ hr:not([size]) {
 
 .card-news .mask-wrapper:hover .image-wrapper .card-image {
   -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  transform: scale(1.08);
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
@@ -163,7 +163,7 @@ hr:not([size]) {
 .btn-load-all-news:hover {
   color: #ffffff;
   -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  transform: scale(1.08);
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
@@ -220,4 +220,7 @@ hr:not([size]) {
   color: #727272;
   font-weight: 300;
 }
+
+/* Berita, Events, Detail */
+
 /*# sourceMappingURL=main.css.map */

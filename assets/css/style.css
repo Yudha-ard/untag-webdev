@@ -757,6 +757,11 @@ nav ul li a {
   padding-right: 0;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #profilePost .nav-tabs .nav-link.active {
   background-color: transparent;
   color: var(--first-text);

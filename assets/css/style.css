@@ -752,6 +752,11 @@ nav ul li a {
   border-radius: 20px;
 }
 
+.no-padding-left-right {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #profilePost .nav-tabs .nav-link.active {
   background-color: transparent;
   color: var(--first-text);

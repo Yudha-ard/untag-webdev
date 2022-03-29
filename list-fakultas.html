@@ -4,20 +4,320 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universitas 17 Agustus 1945 Surabaya | List Fakultas</title>
+    <title>Universitas 17 Agustus 1945 Surabaya | Visi, Misi & Tujuan</title>
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
     <!-- my css -->
     <link rel="stylesheet" href="assets/style/main.css" />
+    <style type="text/css">
+        :root {
+        --surface-color: #fff;
+        --curve: 40;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Nunito', sans-serif;
+        background-color: #f7f7f7;
+        }
+
+        .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin: 6rem 5vw;
+        padding: 0;
+        list-style-type: none;
+        }
+
+        .card {
+        position: relative;
+        display: block;
+        height: 100%;  
+        border-radius: calc(var(--curve) * 1px);
+        overflow: hidden;
+        text-decoration: none;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+
+        .card__image {      
+        width: 100%;
+        height: 250px;
+        }
+
+        .card__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;      
+        border-radius: calc(var(--curve) * 1px);    
+        background-color: var(--surface-color);      
+        transform: translateY(100%);
+        transition: .2s ease-in-out;
+        }
+
+        .card:hover .card__overlay {
+        transform: translateY(0);
+        }
+
+        .card__header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding: 2em;
+        border-radius: calc(var(--curve) * 1px) 0 0 0;    
+        background-color: var(--surface-color);
+        transform: translateY(-100%);
+        transition: .2s ease-in-out;
+        }
+
+        .card__arc {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        bottom: 100%;
+        right: 0;      
+        z-index: 1;
+        }
+
+        .card__arc path {
+        fill: var(--surface-color);
+        d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        }       
+
+        .card:hover .card__header {
+        transform: translateY(0);
+        }
+
+        .card__thumb {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;      
+        border-radius: 50%;      
+        }
+
+        .card__title {
+        font-size: 1em;
+        color: #212529;
+        font-weight: 600;
+        }
+
+        
+
+        .card__description {
+        padding: -2 2em 2em;
+        margin: 0;
+        color: #212529;
+        font-family: "Nunito", sans-serif;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        }
+        .ul-bottom {
+          margin-bottom: 30px;
+        }
+    </style>
+
 </head>
     <body> 
         <section id="content">
-            <div class="container">
-                <div class="row mt-10 justify-content-center">
-                    asd
+            <div class="container mt-5 detail-news">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-md-10 order-md-1">
+                        <div class="row">
+                            <div class="card-body text-align">
+                                <div class="card-title text-center">
+                                    <p class="title" style="font-weight: 600;"><h2>PENDIDIKAN</h2></p>
+                                    <hr>
+                                    <p>Universitas 17 agustus 1945 surabaya (Untag) Surabaya merupakan perguruan tinggi swasta pertama di Jawa Timur, didirikan pada tanggal 17 agustus 1958. Untag Surabaya memiliki jenjang pendidikan dari Program Diploma 3 (D3), Program Sarjana (S1), Program Magister (S2) dan Program Doktor (S3).</p>
+                                    </br></br>
+                                    <p class="title" style="font-weight: 600;"><h4>LIST FAKULTAS</h4></p>
+                                    <center>
+                                      <hr style="width: 150px;">
+                                    </center>
+                                    <ul class="cards">
+                                        <li>
+                                          <a href="https://fisip.untag-sby.ac.id/" class="card">
+                                            <img src="https://fisip.untag-sby.ac.id/backend/uploads/halamanstatis/UNTAG4.jpg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Ilmu Sosial Dan Ilmu Politik</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        <li>Ilmu Komunikasi</li>
+                                                        <li>Administrasi Bisnis</li>
+                                                        <li>Administrasi Publik</li>
+                                                        <li>Magister Ilmu Administrasi</li>
+                                                        <li>Doktor Ilmu Administrasi</li>
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://fh.untag-sby.ac.id/" class="card">
+                                            <img src="http://biaya-kuliah.net/wp-content/uploads/2017/07/untag.jpg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Hukum</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                      <li>Sarjana Ilmu Hukum</li>
+                                                      <li>Magister Ilmu Hukum</li>
+                                                      <li>Doktor Ilmu Hukum</li>
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://fe.untag-sby.ac.id/" class="card">
+                                            <img src="https://jatimnow.com/po-content/uploads/Untag_Surabaya.jpg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Ekonomi & Bisnis</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        
+                                                      <li>Ekonomi Manajemen</li>
+                                                      <li>Ekonomi Akuntasi</li>
+                                                      <li>Ekonomi Pembangunan</li>
+                                                      <li>Magister Manajemen</li>
+                                                      <li>Doktor Ilmu Ekonomi</li>
+
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://psikologi.untag-sby.ac.id/" class="card">
+                                            <img src="http://4.bp.blogspot.com/-TgmnPhv68dM/TjmdEhNNAeI/AAAAAAAAAAM/RgaF85uk5AQ/s1600/IMG_0013.JPG" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Psikologi</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        <li>Sarjana Psikologi</li>
+                                                        <li>Magister Psikologi</li>
+                                                        <li>Psikologi Profesi</li>
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://ft.untag-sby.ac.id/" class="card">
+                                            <img src="https://elektro.untag-sby.ac.id/backend/uploads/slider/GEDUNG_FT_1.jpeg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Teknik</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        
+                                                        <li>Teknik Industri</li>
+                                                        <li>Teknik Mesin</li>
+                                                        <li>Teknik Sipil</li>
+                                                        <li>Teknik Elektro</li>
+                                                        <li>Teknik Arsitektur</li>
+                                                        <li>Teknik Informatika</li>
+                                                        <li>Magister Teknik Sipil</li>
+
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://fib.untag-sby.ac.id/" class="card">
+                                            <img src="https://i0.wp.com/harga.web.id/wp-content/uploads/untag-surabaya-1.jpg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Ilmu Budaya</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    </span></p><ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        <li>Sastra Jepang</li>
+                                                        <li>Sastra Inggris</li>
+                                                      </ul>
+                                                    
+                                            <p></p>
+                                            </div>
+                                          </a>      
+                                        </li>
+                                        <li>
+                                          <a href="https://fv.untag-sby.ac.id/" class="card">
+                                            <img src="https://tm.vokasi.untag-sby.ac.id/backend/uploads/halamanstatis/IMG_07662.jpg" class="card__image" alt="">
+                                            <div class="card__overlay">
+                                              <div class="card__header">
+                                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path></path></svg>
+                                                <div class="card__header-text">
+                                                  <h3 class="card__title">Fakultas Vokasi</h3>
+                                                </div>
+                                              </div>
+                                              <p class="card__description mb-2">
+                                                <span class="card__status">
+                                                    <ul class="ul-bottom" style="text-align: left;color: black;text-decoration: none;">
+                                                        
+                                                        <li> Manufaktur</li>
+                                                        <li> Listrik</li>
+                                                        <li>Agro Industri</li>
+
+                                                      </ul>
+                                                  </span>  
+                                            </p>
+                                            </div>
+                                          </a>      
+                                        </li>  
+                                    </ul>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+              </div>
         </section>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

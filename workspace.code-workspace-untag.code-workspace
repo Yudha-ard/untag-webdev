@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../desaku"
+		},
+		{
+			"path": "../untag"
+		},
+		{
+			"path": "../travelinary"
+		}
+	],
+	"settings": {}
+}

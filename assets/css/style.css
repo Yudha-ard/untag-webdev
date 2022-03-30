@@ -1793,6 +1793,7 @@ body {
   padding: 10px 40px;
   border-radius: 10px;
   background-color: #f0f0f0;
+  color: #262626;
 }
 
 .card-img-top {
@@ -2004,6 +2005,10 @@ main {
 .topnav .navbar-nav .nav-item .nav-link {
   font-family: "Nunito", sans-serif !important;
   font-weight: 600 !important;
+}
+
+.about {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
